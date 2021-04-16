@@ -1,0 +1,38 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0%;
+}
+
+header {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  border-color: #0065fc;
+  text-decoration: none;
+  padding: 2.7rem 1.5em 0 1.5em;
+  margin: 0 2em 0 2em;
+}
+
+.active {
+  color: #0065fc;
+  border-top: 2px solid;
+}
+
+.inactive {
+  color: rgb(80, 79, 79);
+  padding: 2.7rem 1.5em 0 1.5em;
+}
+
+.nav-register {
+  color: #0065fc;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 2em 0 2em;
+}
