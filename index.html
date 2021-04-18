@@ -28,57 +28,72 @@
       </nav>
     </header>
 
-    <div>
-      <!-- Première section, haut de page en dessous du nav-->
-      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-      <p>En plein centre-ville ou en pleine nature</p>
-      <i class="fas fa-map-marker-alt"></i>
-      <input type="search" placeholder="Marseille, France" />
-      <button>Rechercher</button>
-      <p>Filtres</p>
-      <button><i class="fas fa-money-bill-wave"></i>Économique</button>
-      <button><i class="fas fa-child"></i>Familial</button>
-      <button><i class="fas fa-heart"></i>Romantique</button>
-      <button><i class="fas fa-dog"></i>Animaux autorisés</button>
-      <p>
-        <i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles
-        dans cette ville
-      </p>
-    </div>
-
-    <section id="hébergements">
-      <!--Section hébergements-->
+    <main>
       <div>
-        <h2>Hébergements à Marseille</h2>
-        <p>Afficher plus</p>
+        <!-- Première section, haut de page en dessous du nav-->
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre-ville ou en pleine nature</p>
+        <div class="search-wrapper">
+          <i class="fas fa-map-marker-alt info-logo"></i>
+          <input type="search" class="input-location" />
+          <button class="search-btn">Rechercher</button>
+        </div>
+
+        <div class="filters-wrapper">
+          <h3>Filtres</h3>
+          <button class="btn-rounded">
+            <i class="fas fa-money-bill-wave btn-logo"></i>Économique
+          </button>
+          <button class="btn-rounded">
+            <i class="fas fa-child btn-logo"></i>Familial
+          </button>
+          <button class="btn-rounded">
+            <i class="fas fa-heart btn-logo"></i>Romantique
+          </button>
+          <button class="btn-rounded">
+            <i class="fas fa-dog btn-logo"></i>Animaux autorisés
+          </button>
+        </div>
+        <p>
+          <i class="fas fa-info logo-circle"></i>Plus de 500 logements sont
+          disponibles dans cette ville
+        </p>
       </div>
 
-      <div>
-        <!-- Les plus populaires-->
-        <h2>Les plus populaires</h2>
-        <i class="fas fa-chart-line"></i>
-      </div>
-    </section>
+      <section id="hébergements">
+        <!--Section hébergements-->
+        <div class="box-container">
+          <h2>Hébergements à Marseille</h2>
+          <p>Afficher plus</p>
+        </div>
 
-    <section id="activités">
-      <!-- Les activités-->
-      <h2>Activités à Marseille</h2>
-    </section>
+        <div class="box-container">
+          <!-- Les plus populaires-->
+          <h2>Les plus populaires</h2>
+          <i class="fas fa-chart-line"></i>
+        </div>
+      </section>
+
+      <section id="activités">
+        <!-- Les activités-->
+        <h2>Activités à Marseille</h2>
+      </section>
+    </main>
 
     <footer>
-      <div>
-        <div>
+      <div class="footer-wrapper">
+        <div class="footer-content">
           <h3>A propos</h3>
           <p>Fonctionnement du site</p>
           <p>Conditions générales de vente</p>
           <p>Données et confidentialité</p>
         </div>
-        <div>
+        <div class="footer-content">
           <h3>Nos hébergements</h3>
           <p>Charte qualité</p>
           <p>Soumettre votre hôtel</p>
         </div>
-        <div>
+        <div class="footer-content">
           <h3>Assistance</h3>
           <p>Centre d'aide</p>
           <p>Nous contacter</p>
