@@ -63,7 +63,7 @@ header {
   display: flex;
 }
 
-.info-logo {
+.map-logo {
   padding: 15px;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
@@ -95,7 +95,7 @@ header {
   margin: 1em 0 1em;
 }
 
-.button {
+.filters-button {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -105,6 +105,7 @@ header {
   font-size: 15px;
   border-radius: 40px;
   border: solid #f2f2f2;
+  margin: 0 3em;
 }
 
 .btn-icon {
@@ -148,13 +149,6 @@ header {
   padding: 30px;
 }
 
-.locations-aside-container {
-  width: 25%;
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  padding: 30px;
-}
-
 .cards-container {
   display: flex;
   justify-content: left;
@@ -185,10 +179,16 @@ header {
   color: #f2f2f2;
 }
 
-.location-aside-container {
+.cards-container-aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.locations-container-aside {
+  width: 25%;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 30px;
 }
 
 /* Activities */
