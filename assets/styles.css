@@ -1,3 +1,4 @@
+/* Main CSS */
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -18,15 +19,13 @@ p {
   font-weight: 400;
 }
 
+/* Header */
+
 header {
   padding: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-footer {
-  background-color: #f2f2f2;
 }
 
 .nav-link {
@@ -52,6 +51,8 @@ footer {
   text-decoration: none;
   margin: 0 2em 0 2em;
 }
+
+/* Search section */
 
 .search-wrapper {
   display: flex;
@@ -127,16 +128,32 @@ footer {
   margin-right: 1rem;
 }
 
-#hébergements {
+/* Locations section */
+
+#locations {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
 }
 
-.box-container {
+.locations-container {
+  width: 50%;
   background-color: #f2f2f2;
   border-radius: 25px;
-  padding: 10px;
+  padding: 30px;
+}
+
+.locations-aside-container {
+  width: 30%;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .location-card {
@@ -154,13 +171,16 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 
-.location-wrapper {
+.location-aside-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.footer-wrapper {
+/* Footer CSS */
+
+footer {
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
