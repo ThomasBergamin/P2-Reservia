@@ -75,6 +75,7 @@ nav li {
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
   cursor: pointer;
+  transition-duration: 0.1s;
 }
 
 .input-location {
@@ -82,6 +83,10 @@ nav li {
   font-weight: bold;
   font-size: 14px;
   padding: 10px;
+}
+
+.map-logo:hover {
+  transform: scale(1.08);
 }
 
 .search-btn {
@@ -94,6 +99,11 @@ nav li {
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.search-btn:hover {
+  transform: scale(1.08);
 }
 
 .filters-wrapper {
@@ -106,13 +116,18 @@ nav li {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  color: black;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 40px;
-  border: solid #f2f2f2;
-  margin: 0 3em;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid #f2f2f2;
+  transition-duration: 0.1s;
+  margin-right: 2rem;
+}
+.filters-button:hover {
+  background-color: #0065fc;
+  color: white;
+  transform: scale(1.08);
 }
 
 .btn-icon {
@@ -120,16 +135,6 @@ nav li {
   padding: 15px;
   color: #0065fc;
   border-radius: 50%;
-}
-
-.btn-rounded {
-  border-radius: 40px;
-  background-color: white;
-  border: solid #f2f2f2;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 0;
-  cursor: pointer;
 }
 
 .logo-circle {
