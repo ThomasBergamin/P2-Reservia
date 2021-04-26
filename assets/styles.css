@@ -247,7 +247,7 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin: 0 25em 0 0;
+  margin-right: 20%;
 }
 
 footer a {
@@ -255,4 +255,13 @@ footer a {
   text-decoration: none;
   color: black;
   margin: 5px 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  display: block;
+  margin: 1rem 0;
 }
