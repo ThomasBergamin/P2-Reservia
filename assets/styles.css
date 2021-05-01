@@ -39,6 +39,10 @@ header {
   align-items: center;
 }
 
+nav ul {
+  padding-left: 0;
+}
+
 nav li {
   display: inline;
 }
@@ -46,7 +50,7 @@ nav li {
 .nav-link {
   border-color: #0065fc;
   text-decoration: none;
-  padding: 2.9rem 1.5em 0 1.5em;
+  padding: 2.9rem 0;
   margin: 0 2em 0 2em;
   font-weight: 500;
 }
@@ -304,6 +308,7 @@ footer a:hover {
 
 footer ul {
   padding: 0;
+  margin: 0;
 }
 
 footer li {
