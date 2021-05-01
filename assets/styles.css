@@ -58,11 +58,14 @@ nav li {
 .active {
   color: #0065fc;
   border-top: 2px solid;
+  padding: 2.9rem 1.5em 0 1.5em;
+  margin: 0 12px 0 12px;
 }
 
 .inactive {
   color: rgb(109, 109, 109);
   padding: 2.9rem 1.5em 0 1.5em;
+  margin: 0 12px 0 12px;
 }
 
 .inactive:hover {
@@ -151,9 +154,6 @@ nav li {
 
 .search-btn:hover {
   transform: scale(1.08);
-}
-
-.search-btn-text {
 }
 
 .search-icon {
