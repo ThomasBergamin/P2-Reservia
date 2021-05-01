@@ -79,6 +79,15 @@ nav li {
 
 /* Search section */
 
+.search-title {
+  margin-bottom: 6px;
+}
+
+.search-paragraph {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .search-wrapper {
   display: flex;
 }
