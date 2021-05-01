@@ -126,6 +126,12 @@ nav li {
   margin: 1em 0 1em;
 }
 
+@media screen and (max-width: 675px) {
+  .filters-title {
+    width: 100%;
+  }
+}
+
 .filters-title {
   margin-right: 2rem;
 }
