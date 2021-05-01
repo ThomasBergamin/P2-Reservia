@@ -9,6 +9,8 @@ body {
 
 main {
   padding: 0 2em;
+  margin: auto;
+  max-width: 1600px;
 }
 
 h2 {
@@ -27,6 +29,8 @@ p {
 
 header {
   padding: 2em;
+  margin: auto;
+  max-width: 1600px;
 }
 
 .navbar {
@@ -267,10 +271,18 @@ nav li {
 
 footer {
   background-color: #f2f2f2;
+
+  padding: 2em;
+
+  width: 100%;
+}
+
+.footer-wrapper {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  padding: 2em;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .footer-content {
