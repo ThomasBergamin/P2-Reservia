@@ -54,7 +54,12 @@ nav li {
 
 .inactive {
   color: rgb(109, 109, 109);
-  padding: 2.7rem 1.5em 0 1.5em;
+  padding: 2.9rem 1.5em 0 1.5em;
+}
+
+.inactive:hover {
+  color: #0065fc;
+  border-top: 2px solid;
 }
 
 .nav-register {
