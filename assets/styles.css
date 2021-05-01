@@ -114,6 +114,7 @@ nav li {
 .filters-wrapper {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 1em 0 1em;
 }
 
