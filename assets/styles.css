@@ -161,6 +161,12 @@ nav li {
   padding: 30px;
 }
 
+.locations-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cards-container {
   display: flex;
   justify-content: left;
