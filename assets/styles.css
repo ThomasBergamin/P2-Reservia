@@ -139,10 +139,11 @@ header {
   }
 
   .inactive {
-    color: rgb(109, 109, 109);
+    text-decoration: none;
+    color: inherit;
   }
 
-  .inactive:hover {
+  .inactive-link:hover {
     color: #0065fc;
     border-bottom: 3px solid;
   }
@@ -513,6 +514,12 @@ footer {
   padding: 2em;
 
   width: 100%;
+}
+
+@media screen and (max-width: 675px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer-wrapper {
