@@ -18,6 +18,7 @@ p {
 .bold {
   font-weight: bold;
 }
+/* Main CSS */
 
 /* Header */
 
@@ -27,10 +28,108 @@ header {
   max-width: 1450px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 676px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "img . links register";
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .nav-img {
+    grid-area: img;
+  }
+
+  .nav-links {
+    grid-area: links;
+  }
+  .nav-right-register {
+    grid-area: register;
+    place-self: center;
+  }
+  .nav-link {
+    border-color: #0065fc;
+    text-decoration: none;
+    padding: 2.9rem 0;
+    margin: 0 2em 0 2em;
+    font-weight: 500;
+  }
+
+  .active {
+    color: #0065fc;
+    border-top: 2px solid;
+    padding: 2.9rem 1.5em 0 1.5em;
+    margin: 0 12px 0 12px;
+  }
+
+  .inactive {
+    color: rgb(109, 109, 109);
+    padding: 2.9rem 1.5em 0 1.5em;
+    margin: 0 12px 0 12px;
+  }
+
+  .inactive:hover {
+    color: #0065fc;
+    border-top: 2px solid;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "img . register"
+      "links links links";
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .nav-img {
+    grid-area: img;
+    place-self: center;
+  }
+
+  .nav-links {
+    grid-area: links;
+    margin-top: 1em;
+  }
+  .nav-right-register {
+    grid-area: register;
+    place-self: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-link {
+    border-color: #0065fc;
+    text-decoration: none;
+    padding: 2.9rem 0;
+    margin: 0 2em 0 2em;
+    font-weight: 500;
+  }
+
+  .active {
+    color: #0065fc;
+    border-bottom: 3px solid;
+    padding: 0 3em 1em 3em;
+    margin: 0 12px 0 12px;
+  }
+
+  .inactive {
+    color: rgb(109, 109, 109);
+    padding: 0 3em 1em 3em;
+    margin: 0 12px 0 12px;
+    border-bottom: 3px solid;
+  }
+
+  .inactive:hover {
+    color: #0065fc;
+    border-bottom: 3px solid;
+  }
 }
 
 nav ul {
@@ -41,38 +140,13 @@ nav li {
   display: inline;
 }
 
-.nav-link {
-  border-color: #0065fc;
-  text-decoration: none;
-  padding: 2.9rem 0;
-  margin: 0 2em 0 2em;
-  font-weight: 500;
-}
-
-.active {
-  color: #0065fc;
-  border-top: 2px solid;
-  padding: 2.9rem 1.5em 0 1.5em;
-  margin: 0 12px 0 12px;
-}
-
-.inactive {
-  color: rgb(109, 109, 109);
-  padding: 2.9rem 1.5em 0 1.5em;
-  margin: 0 12px 0 12px;
-}
-
-.inactive:hover {
-  color: #0065fc;
-  border-top: 2px solid;
-}
-
 .nav-register {
   color: #0065fc;
   font-weight: bold;
   text-decoration: none;
   margin: 0 2em 0 2em;
 }
+/* Header */
 
 /* Main */
 
@@ -214,6 +288,7 @@ main {
   padding: 5px 10px;
   margin-right: 1rem;
 }
+/* Search section */
 
 /* Locations section */
 
@@ -288,6 +363,7 @@ main {
 .location-star-inactive {
   color: #f2f2f2;
 }
+/* Locations section */
 
 /* Popular locations */
 
@@ -348,6 +424,7 @@ main {
 .location-card-right-icons {
   margin-top: 20px;
 }
+/* Popular locations */
 
 /* Activities */
 
@@ -410,6 +487,7 @@ main {
 .card-6 {
   grid-area: 4 / 4 / 7 / 5;
 }
+/* Activities */
 
 /* Footer CSS */
 
@@ -455,3 +533,4 @@ footer li {
   display: block;
   margin: 1rem 0;
 }
+/* Footer CSS */
