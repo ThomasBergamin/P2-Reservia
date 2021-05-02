@@ -21,9 +21,13 @@ p {
 /* Main CSS */
 
 /* Header */
+@media screen and (min-width: 676px) {
+  header {
+    padding: 2em;
+  }
+}
 
 header {
-  padding: 2em;
   margin: auto;
   max-width: 1450px;
 }
@@ -90,6 +94,8 @@ header {
   .nav-img {
     grid-area: img;
     place-self: center;
+    margin-left: 2em;
+    margin-top: 2em;
   }
 
   .nav-links {
@@ -99,31 +105,41 @@ header {
   .nav-right-register {
     grid-area: register;
     place-self: center;
+    margin-top: 2em;
   }
   nav ul {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
   }
+
+  nav li {
+    width: 50%;
+  }
+
   .nav-link {
-    border-color: #0065fc;
     text-decoration: none;
-    padding: 2.9rem 0;
-    margin: 0 2em 0 2em;
+
     font-weight: 500;
+  }
+
+  .active-link {
+    border-bottom: 3px solid;
+    border-color: #0065fc;
+    padding-bottom: 1em;
+  }
+
+  .inactive-link {
+    border-bottom: 3px solid;
+    border-color: #f2f2f2;
+    padding-bottom: 1em;
   }
 
   .active {
     color: #0065fc;
-    border-bottom: 3px solid;
-    padding: 0 3em 1em 3em;
-    margin: 0 12px 0 12px;
   }
 
   .inactive {
     color: rgb(109, 109, 109);
-    padding: 0 3em 1em 3em;
-    margin: 0 12px 0 12px;
-    border-bottom: 3px solid;
   }
 
   .inactive:hover {
