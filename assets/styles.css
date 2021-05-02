@@ -223,7 +223,7 @@ main {
 }
 
 .locations-container {
-  width: 60%;
+  width: 70%;
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 30px;
@@ -244,7 +244,7 @@ main {
 
 .location-card {
   background-color: white;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
   width: 28%;
   padding: 5px;
   border-radius: 1.25rem;
@@ -289,8 +289,10 @@ main {
   color: #f2f2f2;
 }
 
+/* Popular locations */
+
 .locations-container-aside {
-  width: 25%;
+  width: 30%;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 30px;
@@ -300,6 +302,51 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.location-card-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin: 1rem 0;
+  padding: 5px;
+  border-radius: 1.25rem;
+  box-shadow: 0px 0px 8px 5px rgba(99, 99, 99, 0.09);
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.location-card-aside:hover {
+  transform: scale(1.05);
+}
+
+.location-card-left {
+  width: 35%;
+}
+
+.location-card-left-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+  object-fit: cover;
+}
+
+.location-card-right {
+  width: 60%;
+  padding: 5px;
+}
+
+.location-card-right-title {
+  margin: 0;
+}
+
+.location-card-right-text {
+  margin-top: 5px;
+}
+
+.location-card-right-icons {
+  margin-top: 20px;
 }
 
 /* Activities */
