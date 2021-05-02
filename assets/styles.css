@@ -24,7 +24,7 @@ p {
 header {
   padding: 2em;
   margin: auto;
-  max-width: 1600px;
+  max-width: 1450px;
 }
 
 .navbar {
@@ -79,7 +79,7 @@ nav li {
 main {
   padding: 0 2em;
   margin: auto;
-  max-width: 1600px;
+  max-width: 1450px;
 }
 
 /* Search section */
@@ -425,7 +425,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  max-width: 1600px;
+  max-width: 1450px;
   margin: auto;
 }
 
