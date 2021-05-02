@@ -328,10 +328,19 @@ main {
   align-items: center;
 }
 
+.locations-btn:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+.locations-btn {
+  font-weight: 700;
+}
+
 .cards-container {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+  margin-bottom: 1.2rem;
 }
 
 .location-card {
@@ -513,7 +522,7 @@ footer {
 
   padding: 2em;
 
-  width: 100%;
+  margin: auto;
 }
 
 @media screen and (max-width: 675px) {
@@ -533,7 +542,7 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin-right: 20%;
+  margin-right: 10em;
 }
 
 footer a {
