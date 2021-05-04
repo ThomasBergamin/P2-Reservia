@@ -603,6 +603,15 @@ footer {
   .footer-wrapper {
     flex-direction: column;
   }
+  .footer-content {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer-content {
+    margin-right: 10em;
+  }
 }
 
 .footer-wrapper {
@@ -616,7 +625,6 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin-right: 10em;
 }
 
 footer a {
