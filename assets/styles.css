@@ -309,7 +309,7 @@ main {
 
 /* Locations section */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1060px) {
   #locations {
     display: flex;
     flex-direction: column-reverse;
@@ -323,7 +323,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1061px) {
   #locations {
     display: flex;
   }
@@ -365,6 +365,8 @@ main {
     margin-bottom: 1.2rem;
   }
   .location-card {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 1rem 1rem 1rem 0;
     width: 28%;
@@ -417,6 +419,8 @@ main {
   margin-top: 5px;
   padding: 5px;
   margin-left: 7px;
+  position: relative;
+  height: 50%;
 }
 
 .location-card-footer-title {
@@ -424,7 +428,12 @@ main {
 }
 
 .location-card-footer-text {
-  margin: 8px 0;
+  margin: 10px 0 25px 0;
+}
+
+.location-card-footer-icons {
+  position: absolute;
+  bottom: 0.2rem;
 }
 
 .location-star {
@@ -470,12 +479,14 @@ main {
   height: 100%;
   border-radius: 1rem 0 0 1rem;
   object-fit: cover;
-  max-height: 150px;
+  min-height: 133px;
+  max-height: 135px;
 }
 
 .location-card-right {
   width: 60%;
   padding: 5px;
+  position: relative;
 }
 
 .location-card-right-title {
@@ -483,11 +494,13 @@ main {
 }
 
 .location-card-right-text {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .location-card-right-icons {
   margin-top: 20px;
+  position: absolute;
+  bottom: 0.2rem;
 }
 /* Popular locations */
 
